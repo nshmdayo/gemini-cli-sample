@@ -13,6 +13,13 @@
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PAT}"
       }
+    },
+    "imagen": {
+      "command": "mcp-imagen-go",
+      "env": {
+        "MCP_SERVER_REQUEST_TIMEOUT": "300",
+        "PROJECT_ID": "${PROJECT_ID}"
+      }
     }
   }
 }

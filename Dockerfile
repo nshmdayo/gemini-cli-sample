@@ -17,7 +17,8 @@ ENV PATH="/root/.local/share/mise/shims:/root/.local/share/mise/installs/node/la
 
 RUN mise install node@latest \
     && mise use node@latest \
-    && npm install -g @google/gemini-cli
+    && npm install -g @google/gemini-cli \
+    && mise use go@latest
 
 RUN mkdir -p /gemini
 WORKDIR /gemini
